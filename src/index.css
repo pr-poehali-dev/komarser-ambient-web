@@ -1,5 +1,4 @@
-@import url("https://fonts.cdnfonts.com/css/druk-wide");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -7,33 +6,33 @@
 
 @layer base {
   :root {
-    --background: 0 0% 4%;
+    --background: 210 30% 8%;
     --foreground: 0 0% 98%;
 
-    --card: 0 0% 10%;
+    --card: 210 25% 12%;
     --card-foreground: 0 0% 98%;
 
-    --popover: 0 0% 10%;
+    --popover: 210 25% 12%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 43 74% 59%;
-    --primary-foreground: 0 0% 4%;
+    --primary: 142 76% 36%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 0 0% 15%;
+    --secondary: 210 20% 18%;
     --secondary-foreground: 0 0% 98%;
 
-    --muted: 0 0% 15%;
+    --muted: 210 20% 18%;
     --muted-foreground: 0 0% 64%;
 
-    --accent: 0 0% 15%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 142 76% 36%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 63% 31%;
+    --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 15%;
-    --input: 0 0% 15%;
-    --ring: 43 74% 59%;
+    --border: 210 20% 20%;
+    --input: 210 20% 18%;
+    --ring: 142 76% 36%;
 
     --radius: 0.3rem;
 
@@ -100,7 +99,7 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: "Roboto", sans-serif;
+    font-family: "Inter", sans-serif;
   }
 
   h1,
@@ -109,14 +108,20 @@
   h4,
   h5,
   h6 {
-    font-family: "Druk Wide", sans-serif;
-    font-weight: 700;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
   }
 }
 
 @layer utilities {
-  .cinematic-text {
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
+  .gradient-text {
+    background: linear-gradient(
+      135deg,
+      hsl(var(--primary)) 0%,
+      hsl(142 76% 50%) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 }
