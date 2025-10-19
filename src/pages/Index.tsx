@@ -51,7 +51,7 @@ const Index = () => {
                 <div className="h-px w-20 md:w-32 bg-primary"></div>
               </div>
               
-              <p className="text-base sm:text-xl md:text-2xl text-muted-foreground font-light max-w-2xl leading-relaxed">
+              <p className="text-sm sm:text-base md:text-xl text-muted-foreground font-light max-w-2xl leading-relaxed">
                 Амбиент-артист, исследующий границы звука и кино. 
                 Создаю атмосферные саундскейпы и стремлюсь к актёрскому мастерству.
               </p>
