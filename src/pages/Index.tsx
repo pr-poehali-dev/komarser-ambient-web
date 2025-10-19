@@ -2,12 +2,11 @@ import { useState } from 'react';
 import Icon from '@/components/ui/icon';
 
 const tracks = [
-  { id: 1, title: 'Nebula Dreams', duration: '4:23', year: '2024' },
-  { id: 2, title: 'Silent Horizon', duration: '5:47', year: '2024' },
-  { id: 3, title: 'Ethereal Whispers', duration: '6:12', year: '2023' },
-  { id: 4, title: 'Midnight Echoes', duration: '4:56', year: '2023' },
-  { id: 5, title: 'Cosmic Solitude', duration: '7:34', year: '2023' },
-  { id: 6, title: 'Fragments of Time', duration: '5:29', year: '2022' },
+  { id: 1, title: 'sad day', duration: '2:38', year: '2024' },
+  { id: 2, title: 'Los Santos', duration: '2:22', year: '2024' },
+  { id: 3, title: 'Lonely', duration: '4:00', year: '2024' },
+  { id: 4, title: 'Worringly', duration: '2:17', year: '2023' },
+  { id: 5, title: 'Wait me', duration: '2:13', year: '2023' },
 ];
 
 const Index = () => {
@@ -26,7 +25,7 @@ const Index = () => {
                 activeSection === 'home' ? 'text-primary' : 'text-muted-foreground hover:text-foreground'
               }`}
             >
-              Главная
+              ГЛАВНАЯ
             </button>
             <button
               onClick={() => setActiveSection('music')}
@@ -34,7 +33,7 @@ const Index = () => {
                 activeSection === 'music' ? 'text-primary' : 'text-muted-foreground hover:text-foreground'
               }`}
             >
-              Музыка
+              МУЗЫКА
             </button>
           </div>
         </div>
@@ -53,25 +52,25 @@ const Index = () => {
               </div>
               
               <p className="text-xl md:text-2xl text-muted-foreground font-light max-w-2xl leading-relaxed">
-                Ambient artist exploring the boundaries of sound and cinema. 
-                Creating atmospheric soundscapes while pursuing the art of performance.
+                Амбиент-артист, исследующий границы звука и кино. 
+                Создаю атмосферные саундскейпы и стремлюсь к актёрскому мастерству.
               </p>
 
               <div className="flex gap-12 pt-8">
                 <div className="space-y-2">
                   <div className="flex items-center gap-3">
                     <Icon name="Music" size={20} className="text-primary" />
-                    <span className="cinematic-text text-sm text-muted-foreground">Musician</span>
+                    <span className="cinematic-text text-sm text-muted-foreground">МУЗЫКАНТ</span>
                   </div>
-                  <p className="text-foreground font-light">Ambient / Experimental</p>
+                  <p className="text-foreground font-light">Амбиент / Экспериментал</p>
                 </div>
                 
                 <div className="space-y-2">
                   <div className="flex items-center gap-3">
                     <Icon name="Film" size={20} className="text-primary" />
-                    <span className="cinematic-text text-sm text-muted-foreground">Actor</span>
+                    <span className="cinematic-text text-sm text-muted-foreground">АКТЁР</span>
                   </div>
-                  <p className="text-foreground font-light">Aspiring Performer</p>
+                  <p className="text-foreground font-light">Начинающий исполнитель</p>
                 </div>
               </div>
             </div>
@@ -84,7 +83,7 @@ const Index = () => {
         <section className="min-h-screen px-6 pt-32 pb-20 animate-fade-in">
           <div className="max-w-4xl mx-auto">
             <div className="mb-16">
-              <h2 className="text-6xl md:text-7xl font-light cinematic-text mb-4">МУЗЫКА</h2>
+              <h2 className="text-6xl md:text-7xl font-bold cinematic-text mb-4">МУЗЫКА</h2>
               <div className="h-px w-24 bg-primary"></div>
             </div>
 
@@ -111,7 +110,7 @@ const Index = () => {
                       </div>
                     </div>
                     <div className="flex items-center gap-8 text-muted-foreground">
-                      <span className="font-light hidden md:block">{track.year}</span>
+                      <span className="font-light hidden md:block">{track.year} г.</span>
                       <span className="font-light tabular-nums">{track.duration}</span>
                     </div>
                   </div>
